@@ -1,8 +1,8 @@
 # Course Registration
 
-> Responsive Course Registration website
+> Responsive Course Registration Website
 
-#### Live Link: [Course-Registration](my-course-roster.netlify.app/)
+#### Live Link: [Course-Registration-Website](https://my-courses-roster.netlify.app/)
 
 ## Used Technology
 

@@ -1,15 +1,17 @@
+import PropTypes from "prop-types";
+
 const CoursesCart = ({ courseTitle, price, credit }) => {
   return (
     <div className="max-w-[310px] h-fit mx-auto shadow-lg px-5 rounded-lg mb-6 bg-white ">
       <h1 className="text-[#2F80ED] font-semibold text-[18px] my-3">
-        Credit Hour Remaining 7 hr
+        Every Course purchase Details
       </h1>
       <hr />
       <div>
-        <h2 className="font-bold text-[18px] my-2">Course Name</h2>
+        <h2 className="font-bold text-[18px] my-2 ">Course Name</h2>
         {courseTitle.map((item, id) => (
           <ul key={id}>
-            {id + 1} {item}
+            {id + 1} - {item}
           </ul>
         ))}
       </div>
@@ -21,4 +23,9 @@ const CoursesCart = ({ courseTitle, price, credit }) => {
   );
 };
 
+CoursesCart.propTypes = {
+  courseTitle: PropTypes.array,
+  price: PropTypes.number,
+  credit: PropTypes.number,
+};
 export default CoursesCart;

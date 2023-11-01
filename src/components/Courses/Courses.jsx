@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import Course from "../Course/Course";
 
@@ -20,6 +21,10 @@ const Courses = ({ handleCourseTitle }) => {
       ))}
     </div>
   );
+};
+
+Courses.propTypes = {
+  handleCourseTitle: PropTypes.object,
 };
 
 export default Courses;

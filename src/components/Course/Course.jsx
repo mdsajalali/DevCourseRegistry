@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import { BsBook } from "react-icons/bs";
 import { FiDollarSign } from "react-icons/fi";
 
@@ -16,11 +18,19 @@ const Course = ({ course, handleCourseTitle }) => {
           <BsBook /> Credit: {credit}
         </div>
       </div>
-      <button className="bg-[#2F80ED] hover:bg-sky-700 transition-all  w-full  py-2 rounded-lg text-white text-[18px] my-3" onClick={() => handleCourseTitle(title, price, credit)}>
+      <button
+        className="bg-[#2F80ED] hover:bg-sky-700 transition-all  w-full  py-2 rounded-lg text-white text-[18px] my-3"
+        onClick={() => handleCourseTitle(title, price, credit)}
+      >
         Select
       </button>
     </div>
   );
+};
+
+Course.propTypes = {
+  course: PropTypes.object,
+  handleCourseTitle: PropTypes.object,
 };
 
 export default Course;

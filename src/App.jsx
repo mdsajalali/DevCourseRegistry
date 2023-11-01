@@ -10,10 +10,7 @@ const App = () => {
 
   const handleCourseTitle = (title, price, credit) => {
     const newCourseTitle = [...courseTitle, title];
-    // console.log(price)
-    // if (courseTitle.length > 1) {
-    //   alert("Item already added!");
-    // }
+
     setCourseTitle(newCourseTitle);
     setPrice((prevPrice) => prevPrice + price);
     setCredit((prevCredit) => prevCredit + credit);
@@ -25,7 +22,11 @@ const App = () => {
       <div className="xl:w-[1450px] mx-auto min-h-screen ">
         <div className="md:flex justify-center px-5 md:px-10 py-5">
           <Courses handleCourseTitle={handleCourseTitle} />
-          <CoursesCart courseTitle={courseTitle} price={price} credit={credit} />
+          <CoursesCart
+            courseTitle={courseTitle}
+            price={price}
+            credit={credit}
+          />
         </div>
       </div>
     </div>

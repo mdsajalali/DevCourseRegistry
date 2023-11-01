@@ -4,11 +4,13 @@ import CoursesCart from "./components/coursesCart/coursesCart";
 
 const App = () => {
   return (
-    <div className="bg-[#F3F3F3] w-full min-h-screen">
+    <div className="bg-[#F3F3F3] ">
       <Header />
-      <div className="md:flex md:px-20 md:pt-5 md:pb-16">
-        <Courses />
-        <CoursesCart />
+      <div className="xl:w-[1450px] mx-auto min-h-screen ">
+        <div className="md:flex justify-center px-5 md:px-10 py-5">
+          <Courses />
+          <CoursesCart />
+        </div>
       </div>
     </div>
   );

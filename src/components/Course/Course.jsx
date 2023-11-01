@@ -4,7 +4,7 @@ import { FiDollarSign } from "react-icons/fi";
 const Course = ({ course }) => {
   const { cover, title, description, price, credit } = course;
   return (
-    <div className="w-[320px] shadow-lg px-5 rounded-lg mb-3 bg-white">
+    <div className="max-w-[310px] mx-auto shadow-lg px-5 rounded-lg mb-6 bg-white">
       <img className="mx-auto my-3" src={cover} alt={title} />
       <h1 className="my-2 text-[18px] font-semibold">{title}</h1>
       <p className="text-[15px] ">{description}</p>
